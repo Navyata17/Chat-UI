@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-purple h-screen flex items-center justify-center">
+  <div class="w-full max-w-md bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg shadow-2xl flex flex-col h-[600px] border border-gray-700">
+    <!-- Chat Header -->
+    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-4 rounded-t-lg shadow-md">
+      <h1 class="text-lg font-semibold tracking-wider">Chat Room</h1>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="flex-1 overflow-y-auto p-4 space-y-4" id="chat-messages">
+      <!-- Example messages -->
+      <div class="flex items-start">
+        <div class="bg-gray-700 text-gray-200 px-4 py-2 rounded-lg max-w-xs shadow-md">
+          Hello! How can I assist you today?
+        </div>
+      </div>
+      <div class="flex items-end justify-end">
+        <div class="bg-blue-600 text-white px-4 py-2 rounded-lg max-w-xs shadow-md">
+          Hi! I have a question about the future.
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Input -->
+    <div class="p-4 bg-gray-800 border-t border-gray-700 flex items-center space-x-2">
+      <input 
+        type="text" 
+        placeholder="Type your message..." 
+        class="flex-1 px-4 py-2 bg-gray-700 text-gray-200 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800"
+        id="chat-input"
+      />
+      <button 
+        class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-600 hover:to-purple-700 shadow-lg transform hover:scale-105 transition-transform"
+        id="send-button"
+      >
+        Send
+      </button>
+    </div>
+  </div>
+</body>
+</html>
